@@ -86,7 +86,7 @@ def naked_twins(values):
                 # for each one of the peers of the common peers 
                 for each_common_peer in common_peers:
                     # if the their peer has more than two values
-                    if len(values[each_common_peer]) > 2:
+                    if len(values[each_common_peer]) >= 2:
                         # remove the value from the peer 
                         for remove_val in seed_element:
                             values = assign_value(values, each_common_peer, values[each_common_peer].replace(remove_val, ''))
